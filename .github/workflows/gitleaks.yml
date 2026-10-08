@@ -1,0 +1,19 @@
+name: gitleaks
+
+on:
+  push:
+
+jobs:
+  scan:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run gitleaks
+        # Pinned binary instead of gitleaks/gitleaks-action@v2: the action
+        # requires a paid GITLEAKS_LICENSE for organization accounts.
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz | tar -xz gitleaks
+          ./gitleaks detect --source . --redact --verbose

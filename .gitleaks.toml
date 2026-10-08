@@ -1,0 +1,4 @@
+# gitleaks config: the default ruleset, nothing allowlisted yet.
+
+[extend]
+useDefault = true

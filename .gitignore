@@ -1,0 +1,32 @@
+# --- Sensitive content: never in git ---
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.docx
+*.pptx
+*.zip
+*.m4a
+*.mp3
+*.mp4
+*.wav
+
+# --- Credentials ---
+.env
+.env.*
+.Renviron
+*.pem
+*.key
+*token*
+*secret*
+
+# --- Python / uv ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- Junk ---
+.DS_Store
+.Rhistory
+.RData
+node_modules/
