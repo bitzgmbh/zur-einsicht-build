@@ -2,6 +2,12 @@
 
 Draft 1 of 2026-10-01. One edition, from idea to reader.
 
+![Pipeline map: I decide, agents work, publish and learn](map.svg)
+
+Ideas and rough drafts stay mine. Agents take over from research to translation and ask me after each stage. Nothing goes out without my yes. Thick outline: me. Tinted: agents. Dashed: tools and readers outside the repository. Diamond: gate.
+
+The edition template is in [template.md](template.md).
+
 ## Stages
 
 | # | Stage | Who | Status |
